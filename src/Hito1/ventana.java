@@ -70,3 +70,4 @@ public class ventana extends JFrame{
     }
 
 }
+//Andoni58, vuelves a tocar mi código y te espero en la playa
