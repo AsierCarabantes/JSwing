@@ -8,8 +8,6 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.InvocationTargetException;
-import java.sql.Connection;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -21,8 +19,6 @@ public class PictureViewer extends JFrame {
     private JXDatePicker datePicker;
     private JList<String> pictureNames;
     private JLabel pictureLabel;
-
-    private Connection conn;
     GestorDB gestorDb;
     public PictureViewer(){
 
@@ -49,8 +45,6 @@ public class PictureViewer extends JFrame {
         panelDate.add(new JLabel("Photos after: "));
         panelDate.add(datePicker);
         datePicker.setPreferredSize(new Dimension(150,25));
-
-        panelDate.add(datePicker);
 
         //List
         JPanel panelList = new JPanel();
